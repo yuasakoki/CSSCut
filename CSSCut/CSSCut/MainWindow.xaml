@@ -1,0 +1,205 @@
+﻿<Window x:Class="CSSCut.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CSSCut"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <!--<RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>-->
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Column="0">
+                    <StackPanel>
+                        <TextBlock  FontSize="15" Text="メーカー"/>
+                        <ComboBox Width="120" Height="15"/>
+                    </StackPanel>
+                    <StackPanel>
+                        <TextBlock  FontSize="15" Text="モデル名"/>
+                        <ComboBox Width="120" Height="15"/>
+                    </StackPanel>
+
+                    <StackPanel>
+                        <StackPanel>
+                            <TextBlock  FontSize="15" Text="素材"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <StackPanel VerticalAlignment="Center">
+                                <RadioButton Content="K14" Width="50"/>
+                            </StackPanel>
+                            <StackPanel>
+                                <RadioButton Content="K18" Width="50"/>
+                            </StackPanel>
+                            <StackPanel>
+                                <RadioButton Content="Pt." Width="50"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel>
+                        <TextBlock  FontSize="15" Text="文字盤色"/>
+                        <ComboBox Width="120" Height="15"/>
+                    </StackPanel>
+                    <StackPanel>
+                        <TextBlock  FontSize="15" Text="風防の傷"/>
+                        <CheckBox HorizontalAlignment="Center" Content="無し" />
+                    </StackPanel>
+                    <StackPanel>
+                        <TextBlock  FontSize="15" Text="ベゼル逆回転防止"/>
+                        <CheckBox HorizontalAlignment="Center" Content="正常" />
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Grid.Column="1">
+                    <StackPanel>
+                        <TextBlock  FontSize="15" Text="カレンダー動作"/>
+                        <CheckBox HorizontalAlignment="Center" Content="正常" />
+                    </StackPanel>
+                    <StackPanel>
+                        <TextBlock  FontSize="15" Text="カレンダー早送り"/>
+                        <CheckBox HorizontalAlignment="Center" Content="正常" />
+                    </StackPanel>
+                    <StackPanel>
+                        <TextBlock  FontSize="15" Text="リューズ"/>
+                        <CheckBox HorizontalAlignment="Center" Content="純正品" />
+                    </StackPanel>
+                    <StackPanel>
+                        <TextBlock  FontSize="15" Text="ベルト"/>
+                        <CheckBox HorizontalAlignment="Center" Content="純正品" />
+                    </StackPanel>
+                    <StackPanel>
+                        <TextBlock  FontSize="15" Text="尾錠"/>
+                        <CheckBox HorizontalAlignment="Center" Content="純正品" />
+                    </StackPanel>
+                    <StackPanel>
+                        <StackPanel>
+                            <TextBlock  FontSize="15" Text="デイト機能"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <StackPanel VerticalAlignment="Center">
+                                <RadioButton Content="ノンデイト" Width="70"/>
+                            </StackPanel>
+                            <StackPanel>
+                                <RadioButton Content="デイト" Width="55"/>
+                            </StackPanel>
+                            <StackPanel>
+                                <RadioButton Content="デイデイト" Width="70"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0">
+                    <StackPanel>
+                        <TextBlock  FontSize="15" Text="メーカー"/>
+                        <ComboBox Width="120" Height="15"/>
+                    </StackPanel>
+                    <StackPanel>
+                        <TextBlock  FontSize="15" Text="モデル名"/>
+                        <ComboBox Width="120" Height="15"/>
+                    </StackPanel>
+
+                    <StackPanel>
+                        <StackPanel>
+                            <TextBlock  FontSize="15" Text="素材"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <StackPanel VerticalAlignment="Center">
+                                <RadioButton Content="K14" Width="50"/>
+                            </StackPanel>
+                            <StackPanel>
+                                <RadioButton Content="K18" Width="50"/>
+                            </StackPanel>
+                            <StackPanel>
+                                <RadioButton Content="Pt." Width="50"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel>
+                        <TextBlock  FontSize="15" Text="文字盤色"/>
+                        <ComboBox Width="120" Height="15"/>
+                    </StackPanel>
+                    <StackPanel>
+                        <TextBlock  FontSize="15" Text="風防の傷"/>
+                        <CheckBox HorizontalAlignment="Center" Content="無し" />
+                    </StackPanel>
+                    <StackPanel>
+                        <TextBlock  FontSize="15" Text="ベゼル逆回転防止"/>
+                        <CheckBox HorizontalAlignment="Center" Content="正常" />
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel Grid.Column="1">
+                    <StackPanel>
+                        <TextBlock  FontSize="15" Text="カレンダー動作"/>
+                        <CheckBox HorizontalAlignment="Center" Content="正常" />
+                    </StackPanel>
+
+                    <StackPanel>
+                        <TextBlock  FontSize="15" Text="カレンダー早送り"/>
+                        <CheckBox HorizontalAlignment="Center" Content="正常" />
+                    </StackPanel>
+
+                    <StackPanel>
+                        <TextBlock  FontSize="15" Text="リューズ"/>
+                        <CheckBox HorizontalAlignment="Center" Content="純正品" />
+                    </StackPanel>
+
+                    <StackPanel>
+                        <TextBlock  FontSize="15" Text="ベルト"/>
+                        <CheckBox HorizontalAlignment="Center" Content="純正品" />
+                    </StackPanel>
+
+                    <StackPanel>
+                        <TextBlock  FontSize="15" Text="尾錠"/>
+                        <CheckBox HorizontalAlignment="Center" Content="純正品" />
+                    </StackPanel>
+
+                    <StackPanel>
+                        <StackPanel>
+                            <TextBlock  FontSize="15" Text="デイト機能"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <StackPanel VerticalAlignment="Center">
+                                <RadioButton Content="ノンデイト" Width="70"/>
+                            </StackPanel>
+
+                            <StackPanel>
+                                <RadioButton Content="デイト" Width="55"/>
+                            </StackPanel>
+
+                            <StackPanel>
+                                <RadioButton Content="デイデイト" Width="70"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        </Grid>
+        <DataGrid HorizontalAlignment="Center" Height="197" VerticalAlignment="Center" Width="800" d:ItemsSource="{d:SampleData ItemCount=5}" Grid.Row="1"/>
+    </Grid>
+</Window>
